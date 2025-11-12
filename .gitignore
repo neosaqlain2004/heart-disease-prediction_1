@@ -1,0 +1,67 @@
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# C extensions
+*.so
+
+# Test and cache
+.pytest_cache/
+.mypy_cache/
+.cache/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment / credentials
+.env
+env*.json
+secrets.json
+
+# OneDrive/temp
+~$*
+
+# Data artifacts (do NOT commit large datasets).
+# Use external storage or Git LFS for large datasets.
+*.csv
+data/
+
+# NOTE: Model files (*.h5, *.pkl, *.joblib) ARE committed to the repo for Railway deployment.
+# If you want to exclude them later, uncomment these lines:
+# model/*.h5
+# model/*.pkl
+# model/*.joblib
+
+# Ignore Jupyter notebooks if you don't want them in the repo. Remove this line if you do want notebooks tracked.
+notebooks/
+
+# Railway / deployment notes
+# Keep Procfile, requirements.txt, runtime.txt, and app code tracked for deployment.
+# Do NOT ignore Procfile or requirements.txt
