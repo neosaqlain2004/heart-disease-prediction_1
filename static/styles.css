@@ -78,6 +78,24 @@ input,select{
     color:var(--text);
 }
 
+/* Make native option lists readable in dark theme where supported */
+select option{
+    background: var(--panel);
+    color: var(--text);
+}
+/* Hover/selected states for browsers that support styling options */
+select option:hover,
+select option:checked{
+    background: rgba(47,111,255,0.14);
+    color: var(--text);
+}
+/* Improve cross-browser appearance: remove native arrow and provide consistent text color */
+select{
+    -webkit-appearance:menulist-button;
+    appearance:menulist-button;
+}
+select::-ms-expand{display:none}
+
 /* Simple native select styling (rollback of enhanced dropdown visuals) */
 select{cursor:pointer}
 
