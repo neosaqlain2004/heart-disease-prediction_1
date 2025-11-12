@@ -2,6 +2,16 @@ from flask import Flask, request, jsonify, render_template
 import logging
 import time
 import os
+
+# Reduce TensorFlow startup noise and disable oneDNN optimizations in hosted environments
+# These must be set before TensorFlow is imported (model_utils imports tensorflow.keras).
+# TF_CPP_MIN_LOG_LEVEL: 0 = all logs, 1 = filter out INFO, 2 = filter out WARNING, 3 = filter out ERROR
+os.environ.setdefault('TF_CPP_MIN_LOG_LEVEL', '2')
+# Optionally disable oneDNN optimizations to avoid oneDNN messages (may slightly change numerics)
+os.environ.setdefault('TF_ENABLE_ONEDNN_OPTS', '0')
+# Prevent TensorFlow from trying to use GPUs on hosts where CUDA is not installed
+os.environ.setdefault('CUDA_VISIBLE_DEVICES', '')
+
 from model_utils import preprocess_input, predict
 
 app = Flask(__name__)
