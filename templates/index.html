@@ -125,6 +125,76 @@
     </div>
         <footer>This tool is informational only — not medical advice.</footer>
     </div>
+
+    <section id="how-we-do-this" class="how-section">
+        <h2>How We Do This</h2>
+        <p class="section-description">Our heart disease prediction is powered by a rigorous machine learning pipeline. Here's a breakdown of the training process that enables accurate predictions:</p>
+        <div class="process-grid">
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #2f6fff, #5a8dff);"></div>
+                <h3>Data Loading & Sampling</h3>
+                <p>Load patient data and take a sample for faster processing while keeping it representative.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #6bd3a8, #2fb36b);"></div>
+                <h3>Data Preprocessing</h3>
+                <p>Clean and prepare the data by removing unnecessary info and converting units for better understanding.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #f97316, #ff6b6b);"></div>
+                <h3>Feature Preparation</h3>
+                <p>Choose the most important health factors like blood pressure, cholesterol, and lifestyle habits to analyze.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #7f3f98, #a855f7);"></div>
+                <h3>Encoding & Imputation</h3>
+                <p>Convert categories to numbers and fill in any missing values with averages.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #ff6b6b, #ffd166);"></div>
+                <h3>Handling Imbalance</h3>
+                <p>Balance the data so both healthy and sick patients are equally represented for fair training.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #ffd166, #2f6fff);"></div>
+                <h3>Feature Selection</h3>
+                <p>Pick the top 10 most important health factors using smart algorithms to focus on what matters most.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #00a99d, #6bd3a8);"></div>
+                <h3>Polynomial Features & Scaling</h3>
+                <p>Create new features from combinations and standardize all values for better model performance.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #f97316, #7f3f98);"></div>
+                <h3>Model Training & Tuning</h3>
+                <p>Train and optimize 5 different AI models (Decision Tree, SVM, Random Forest, XGBoost, Neural Network) to predict heart disease.</p>
+            </div>
+            <div class="process-card">
+                <div class="card-top" style="background: linear-gradient(90deg, #2fb36b, #00a99d);"></div>
+                <h3>Model Evaluation</h3>
+                <p>Test all models and keep the best performing ones for accurate predictions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-section">
+        <h2>About Us</h2>
+        <p class="section-description">Learn more about this project and the team behind it.</p>
+        <div class="about-content">
+            <p>This heart disease prediction tool is a final year project developed by a student at BMS College of Engineering, Bangalore. The project demonstrates the practical application of machine learning techniques in healthcare, combining data science with web development to create an accessible and user-friendly prediction system.</p>
+            <p>Key features of this project include:</p>
+            <ul>
+                <li>Ensemble machine learning approach using multiple algorithms for accurate predictions</li>
+                <li>Comprehensive data preprocessing and feature engineering</li>
+                <li>Modern web interface with responsive design</li>
+                <li>Educational content explaining the ML pipeline</li>
+                <li>Real-time prediction capabilities</li>
+            </ul>
+            <p>For questions, feedback, or collaboration opportunities, please contact: <a href="mailto:saqlainmudalgi7@gmail.com">saqlainmudalgi7@gmail.com</a></p>
+        </div>
+    </section>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
