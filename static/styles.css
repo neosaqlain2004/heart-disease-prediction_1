@@ -189,7 +189,7 @@ footer{margin-top:20px;color:var(--muted);font-size:0.85rem;text-align:center}
 
 .process-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px 20px;
     margin-top: 30px;
     position: relative;
